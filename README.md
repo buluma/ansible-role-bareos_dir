@@ -4,7 +4,7 @@ Install and configure [Bareos](https://www.bareos.com/) Director.
 
 |GitHub|GitLab|Downloads|Version|Issues|Pull Requests|
 |------|------|-------|-------|------|-------------|
-|[![github](https://github.com/buluma/ansible-role-bareos_dir/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-bareos_dir/actions/workflows/molecule.yml)|[![gitlab](https://gitlab.com/shadowwalker/ansible-role-bareos_dir/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-bareos_dir)|[![downloads](https://img.shields.io/ansible/role/d/)](https://galaxy.ansible.com/buluma/bareos_dir)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-bareos_dir.svg)](https://github.com/buluma/ansible-role-bareos_dir/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-bareos_dir.svg)](https://github.com/buluma/ansible-role-bareos_dir/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-bareos_dir.svg)](https://github.com/buluma/ansible-role-bareos_dir/pulls/)|
+|[![github](https://github.com/buluma/ansible-role-bareos_dir/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-bareos_dir/actions/workflows/molecule.yml)|[![gitlab](https://gitlab.com/shadowwalker/ansible-role-bareos_dir/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-bareos_dir)|[![downloads](https://img.shields.io/ansible/role/d/37530)](https://galaxy.ansible.com/buluma/bareos_dir)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-bareos_dir.svg)](https://github.com/buluma/ansible-role-bareos_dir/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-bareos_dir.svg)](https://github.com/buluma/ansible-role-bareos_dir/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-bareos_dir.svg)](https://github.com/buluma/ansible-role-bareos_dir/pulls/)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -392,7 +392,6 @@ If you find issues, please register them in [GitHub](https://github.com/buluma/a
 
 [buluma](https://buluma.github.io/)
 
-Please consider [sponsoring me](https://github.com/sponsors/buluma).
 
 ### [Special Thanks](#special-thanks)
 

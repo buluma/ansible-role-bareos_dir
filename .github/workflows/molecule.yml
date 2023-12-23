@@ -14,8 +14,6 @@ on:
     paths-ignore:
       - '**/README.md'
       - '**/CHANGELOG.md'
-    tags_ignore:
-      - '*'
   pull_request:
   schedule:
     - cron: '3 2 2 * *'
