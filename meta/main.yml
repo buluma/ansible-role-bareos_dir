@@ -20,7 +20,7 @@ galaxy_info:
         - "9"
     - name: Fedora
       versions:
-        - "37"
+        # - "37"  #TODO: Check why its failing
         - "38"
     - name: opensuse
       versions:
