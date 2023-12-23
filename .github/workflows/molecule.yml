@@ -56,8 +56,6 @@ jobs:
           - image: "enterpriselinux"
             tag: "latest"
           - image: "fedora-systemd"
-            tag: "37"
-          - image: "fedora-systemd"
             tag: "38"
           - image: "docker-opensuse-systemd"
             tag: "latest"
