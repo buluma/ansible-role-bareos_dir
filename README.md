@@ -1,10 +1,10 @@
-# [Ansible role bareos_dir](#bareos_dir)
+# Ansible role [bareos_dir](https://galaxy.ansible.com/ui/standalone/roles/buluma/bareos_dir/documentation)
 
 Install and configure [Bareos](https://www.bareos.com/) Director.
 
-|GitHub|Version|Issues|Pull Requests|
-|------|-------|------|-------------|
-|[![github](https://github.com/buluma/ansible-role-bareos_dir/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-bareos_dir/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-bareos_dir.svg)](https://github.com/buluma/ansible-role-bareos_dir/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-bareos_dir.svg)](https://github.com/buluma/ansible-role-bareos_dir/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-bareos_dir.svg)](https://github.com/buluma/ansible-role-bareos_dir/pulls/)|
+|GitHub|Version|Issues|Pull Requests|Downloads|
+|------|-------|------|-------------|---------|
+|[![github](https://github.com/buluma/ansible-role-bareos_dir/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-bareos_dir/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-bareos_dir.svg)](https://github.com/buluma/ansible-role-bareos_dir/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-bareos_dir.svg)](https://github.com/buluma/ansible-role-bareos_dir/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-bareos_dir.svg)](https://github.com/buluma/ansible-role-bareos_dir/pulls/)|[![Ansible Role](https://img.shields.io/ansible/role/d/buluma/bareos_dir)](https://galaxy.ansible.com/ui/standalone/roles/buluma/bareos_dir/documentation)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -386,13 +386,11 @@ If you find issues, please register them in [GitHub](https://github.com/buluma/a
 
 ## [License](#license)
 
-[Apache-2.0](https://github.com/buluma/ansible-role-bareos_dir/blob/master/LICENSE).
+[Apache-2.0](https://github.com/buluma/ansible-role-bareos_dir/blob/master/LICENSE)
 
 ## [Author Information](#author-information)
 
-[buluma](https://buluma.github.io/)
+[Shadow Walker](https://buluma.github.io/)
 
-
-### [Special Thanks](#special-thanks)
 
 Template inspired by [Robert de Bock](https://github.com/robertdebock)
