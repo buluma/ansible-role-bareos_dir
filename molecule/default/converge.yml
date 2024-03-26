@@ -1,13 +1,13 @@
 ---
 - name: Converge
   hosts: all
-  become: yes
-  gather_facts: yes
+  become: true
+  gather_facts: true
 
   roles:
     - role: ansible-role-bareos_dir
-      bareos_dir_backup_configurations: yes
-      bareos_dir_install_debug_packages: yes
+      bareos_dir_backup_configurations: true
+      bareos_dir_install_debug_packages: true
       bareos_dir_catalogs:
         - name: MyCatalog
           dbname: bareos
@@ -28,7 +28,7 @@
           password: "MySecretPassword"
           maximum_concurrent_jobs: 3
         - name: "disabled-client"
-          enabled: no
+          enabled: false
       bareos_dir_filesets:
         - name: LinuxAll
           description: "Backup all regular filesystems, determined by filesystem type."
@@ -38,7 +38,7 @@
             exclude_dirs_containing: nobackup
             options:
               signature: MD5
-              one_fs: no
+              one_fs: false
               fs_types:
                 - btrfs
                 - ext2
@@ -60,7 +60,7 @@
               - /.journal
               - /.fsck
         - name: disabled-fileset
-          enabled: no
+          enabled: false
       bareos_dir_jobdefs:
         - name: DefaultJob-1
           type: Backup
@@ -76,7 +76,7 @@
           differential_backup_pool: Differential
           incremental_backup_pool: Incremental
         - name: "disabled-jobdef"
-          enabled: no
+          enabled: false
       bareos_dir_jobs:
         - name: my_job
           description: "My backup job"
@@ -87,7 +87,7 @@
           storage: File-1
           messages: Standard
         - name: disabled_job
-          enabled: no
+          enabled: false
         - name: BackupCatalog
           description: "Backup the catalog database (after the nightly save)"
           jobdefs: DefaultJob
@@ -119,9 +119,9 @@
             - "!skipped"
             - "!saved"
         - name: "disabled-message"
-          enabled: no
+          enabled: false
         - name: Daemon
-          description: "Message delivery for daemon messages (no job)."
+          description: "Message delivery for daemon messages (false job)."
           mailcommand: '/usr/bin/bsmtp -h localhost -f \"\(Bareos\) \<%r\>\" -s \"Bareos daemon message\" %r'
           mail:
             - to: root
@@ -155,14 +155,14 @@
       bareos_dir_pools:
         - name: Full
           pool_type: Backup
-          recycle: yes
-          autoprune: yes
+          recycle: true
+          autoprune: true
           volume_retention: 365 days
           maximum_volume_bytes: 50G
           maximum_volumes: 100
           label_format: "Full-"
         - name: "disabled-pool"
-          enabled: no
+          enabled: false
       bareos_dir_profiles:
         - name: webui-admin
           jobacl:
@@ -197,7 +197,7 @@
           pluginoptionsacl:
             - "*all*"
         - name: "disabled-message"
-          enabled: no
+          enabled: false
       bareos_dir_schedules:
         - name: WeeklyCycle
           run:
@@ -209,15 +209,15 @@
           run:
             - Full mon-fri at 21:10
         - name: "disabled-schedule"
-          enabled: no
+          enabled: false
       bareos_dir_storages:
         - name: File-1
           address: dir-1
           password: "MySecretPassword"
           device: FileStorage
           media_type: File
-          tls_enable: yes
-          tls_verify_peer: no
+          tls_enable: true
+          tls_verify_peer: false
           maximum_concurrent_jobs: 3
         - name: "disabled-storage"
-          enabled: no
+          enabled: false
