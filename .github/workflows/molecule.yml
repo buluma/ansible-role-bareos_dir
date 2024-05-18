@@ -59,6 +59,8 @@ jobs:
           - image: "docker-molecule-images"
             tag: "fedora38"
           - image: "docker-molecule-images"
+            tag: "fedora39"
+          - image: "docker-molecule-images"
             tag: "opensuse"
           - image: "docker-molecule-images"
             tag: "jammy"

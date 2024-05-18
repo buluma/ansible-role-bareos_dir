@@ -250,9 +250,6 @@ The machine needs to be prepared. In CI this is done using [`molecule/default/pr
     # The roles buildtools, python_pip and postgres are required.
     # bareos-dir needs to connect to a database.
     - role: buluma.buildtools
-    # EPEL is required for RHEL7.
-    - role: buluma.epel
-    - role: buluma.python_pip
     - role: buluma.postgres
     # The roles core_dependencies and postfix are  required for the `bareos_role`: "dir".
     # bareos-dir needs to send emails.
@@ -368,7 +365,7 @@ This role has been tested on these [container images](https://hub.docker.com/u/b
 |---------|----|
 |[Debian](https://hub.docker.com/r/buluma/debian)|bookworm, bullseye, buster|
 |[EL](https://hub.docker.com/r/buluma/enterpriselinux)|8, 9|
-|[Fedora](https://hub.docker.com/r/buluma/fedora)|38|
+|[Fedora](https://hub.docker.com/r/buluma/fedora)|38, 39|
 |[opensuse](https://hub.docker.com/r/buluma/opensuse)|all|
 |[Ubuntu](https://hub.docker.com/r/buluma/ubuntu)|jammy, focal|
 
