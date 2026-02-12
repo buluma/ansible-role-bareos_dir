@@ -1,40 +1,31 @@
----
 galaxy_info:
   author: buluma
   role_name: bareos_dir
   description: Install and configure [Bareos](https://www.bareos.com/) Director.
   license: Apache-2.0
   company: ShadowNet
-  min_ansible_version: "2.12"
-
+  min_ansible_version: '2.12'
   platforms:
-    - name: Debian
-      versions:
-        - bookworm
-        - bullseye
-        - buster
-    - name: EL
-      versions:
-        - "8"
-        - "9"
-    - name: Fedora
-      versions:
-        - "38"
-        - "39"
-    - name: opensuse
-      versions:
-        - all
-    - name: Ubuntu
-      versions:
-        - jammy
-        - focal
-
+  - name: Debian
+    versions:
+    - all
+  - name: EL
+    versions:
+    - all
+  - name: Fedora
+    versions:
+    - all
+  - name: opensuse
+    versions:
+    - all
+  - name: Ubuntu
+    versions:
+    - all
   galaxy_tags:
-    - bareos
-    - infrastructure
-    - linux
-    - storage
-    - system
-    - tools
-
+  - bareos
+  - infrastructure
+  - linux
+  - storage
+  - system
+  - tools
 dependencies: []
