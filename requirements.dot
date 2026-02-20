@@ -1,0 +1,19 @@
+digraph PhiloDilemma {
+  label = "Michael Buluma" ;
+  overlap=false
+  {
+    "bareos_dir" [fillcolor=yellow style=filled penwidth=3]
+    "buluma.bootstrap" [fillcolor=green style=filled]
+    "buluma.bareos_repository" [fillcolor=green style=filled]
+    "buluma.buildtools" [fillcolor=green style=filled]
+    "buluma.epel" [fillcolor=green style=filled]
+    "buluma.python_pip" [fillcolor=green style=filled]
+    "buluma.postgres" [fillcolor=green style=filled]
+  }
+  "bareos_dir" -> "buluma.bootstrap"
+  "bareos_dir" -> "buluma.bareos_repository"
+  "bareos_dir" -> "buluma.buildtools"
+  "bareos_dir" -> "buluma.epel"
+  "bareos_dir" -> "buluma.python_pip"
+  "bareos_dir" -> "buluma.postgres"
+}
