@@ -300,34 +300,24 @@ bareos_dir_tls_verify_peer: false
 
 # A list of catalogs to configure.
 bareos_dir_catalogs: []
-
 # A list of consoled to configure.
 bareos_dir_consoles: []
-
 # A list of clients to configure.
 bareos_dir_clients: []
-
 # A list of filesets to configure.
 bareos_dir_filesets: []
-
 # A list of jobdefs to configure
 bareos_dir_jobdefs: []
-
 # A list of jobs to configure.
 bareos_dir_jobs: []
-
 # A list of messages to configure.
 bareos_dir_messages: []
-
 # A list of pools to configure.
 bareos_dir_pools: []
-
 # A list of profiles to configure.
 bareos_dir_profiles: []
-
 # A list of schedules to configure.
 bareos_dir_schedules: []
-
 # A list of storages to configure.
 bareos_dir_storages: []
 ```
