@@ -1,18 +1,18 @@
 ---
-  - name: Prepare
-    hosts: all
-    become: true
-    gather_facts: false
+- name: Prepare
+  hosts: all
+  become: true
+  gather_facts: false
 
-    roles:
-      - role: buluma.bootstrap
+  roles:
+  - role: buluma.bootstrap
     # The roles buildtools, python_pip and postgres are required.
     # bareos-dir needs to connect to a database.
-      - role: buluma.buildtools
-      - role: buluma.postgres
+  - role: buluma.buildtools
+  - role: buluma.postgres
     # The roles core_dependencies and postfix are  required for the `bareos_role`: "dir".
     # bareos-dir needs to send emails.
     # - role: buluma.core_dependencies
     # - role: buluma.postfix
-      - role: buluma.bareos_repository
-        bareos_repository_enable_tracebacks: true
+  - role: buluma.bareos_repository
+    bareos_repository_enable_tracebacks: true

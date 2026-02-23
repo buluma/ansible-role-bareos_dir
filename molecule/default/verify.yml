@@ -1,19 +1,19 @@
 ---
-  - name: Verify
-    hosts: all
-    become: true
-    gather_facts: false
+- name: Verify
+  hosts: all
+  become: true
+  gather_facts: false
 
-    tasks:
-      - name: Check if port 9101 is listening
-        ansible.builtin.wait_for:
-          port: 9101
+  tasks:
+  - name: Check if port 9101 is listening
+    ansible.builtin.wait_for:
+      port: 9101
 
-      - name: Test configuration
-        ansible.builtin.command:
-          cmd: bareos-dir --test-config
-        become_user: bareos
-        register: bareos_dir_test_config
-        failed_when:
-          - bareos_dir_test_config.stdout_lines is search("There are 
-            configuration warnings")
+  - name: Test configuration
+    ansible.builtin.command:
+      cmd: bareos-dir --test-config
+    become_user: bareos
+    register: bareos_dir_test_config
+    failed_when:
+    - bareos_dir_test_config.stdout_lines is search("There are configuration 
+      warnings")
