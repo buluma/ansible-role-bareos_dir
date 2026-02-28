@@ -15,5 +15,5 @@
     become_user: bareos
     register: bareos_dir_test_config
     failed_when:
-    - bareos_dir_test_config.stdout_lines is search("There are configuration 
+    - bareos_dir_test_config.stdout_lines is search("There are configuration
       warnings")

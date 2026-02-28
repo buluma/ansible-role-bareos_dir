@@ -222,7 +222,7 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
       - Differential 2nd-5th sat at 21:00
       - Incremental mon-fri at 21:00
     - name: WeeklyCycleAfterBackup
-      description: This schedule does the catalog. It starts after the 
+      description: This schedule does the catalog. It starts after the
         WeeklyCycle.
       run:
       - Full mon-fri at 21:10
@@ -378,4 +378,3 @@ If you find issues, please register them on [GitHub](https://github.com/buluma/a
 ## [Author Information](#author-information)
 
 [buluma](https://buluma.github.io/)
-
