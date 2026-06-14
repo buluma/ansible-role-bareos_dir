@@ -6,7 +6,7 @@ _bareos_dir_requirements:
   default: []
   Debian:
     - procps
-bareos_dir_requirements: "{{ _bareos_dir_requirements[ansible_facts.os_family] | default(_bareos_dir_requirements['default']) }}"
+bareos_dir_requirements: "{{ _bareos_dir_requirements[ansible_facts['os_family']] | default(_bareos_dir_requirements['default']) }}"
 
 # The packages to install.
 bareos_dir_packages:
@@ -31,5 +31,5 @@ _bareos_dir_debug_packages:
     - "bareos-debuginfo"
     - gdb
 bareos_dir_debug_packages:
-  "{{ _bareos_dir_debug_packages[ansible_facts.os_family ~ '-' ~ ansible_facts.distribution_major_version] | default(_bareos_dir_debug_packages[ansible_facts.os_family]
+  "{{ _bareos_dir_debug_packages[ansible_facts['os_family'] ~ '-' ~ ansible_facts['distribution_major_version']] | default(_bareos_dir_debug_packages[ansible_facts['os_family']]
   | default(_bareos_dir_debug_packages['default'])) }}"
