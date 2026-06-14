@@ -11,6 +11,7 @@
 
     - name: Test configuration
       ansible.builtin.command:
+      changed_when: false
         cmd: bareos-dir --test-config
       become_user: bareos
       register: bareos_dir_test_config
