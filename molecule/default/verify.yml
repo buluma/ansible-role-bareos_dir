@@ -11,10 +11,9 @@
 
     - name: Test configuration
       ansible.builtin.command:
-      changed_when: false
         cmd: bareos-dir --test-config
       become_user: bareos
+      changed_when: false
       register: bareos_dir_test_config
       failed_when:
-        - bareos_dir_test_config.stdout_lines is search("There are configuration
-          warnings")
+        - bareos_dir_test_config.stdout_lines is search("There are configuration warnings")
